@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:land_selling/subs/Gridview.dart';
 import 'package:land_selling/subs/Navigation.dart';
 import 'package:land_selling/subs/Pageview1.dart';
+import 'package:land_selling/subs/CustomSerachBar.dart';
 
 
 class homepage extends StatefulWidget {
@@ -18,16 +19,23 @@ class _homepageState extends State<homepage> {
     body: SafeArea(
       child: Column(
         children: [
-          Container(
-            width: 400,
-            height: 45,
-            margin: EdgeInsets.all(15),
-            decoration: BoxDecoration(color: Colors.grey.shade300,borderRadius: BorderRadius.circular(10)),
-            padding: EdgeInsets.all(10),
-            child: Row(children: [
-              Icon(Icons.search,color: Colors.black,),
-              Text("Search", style: TextStyle(fontSize: 20,),)
-            ],),),//SearchBar
+          InkWell(
+            child: Container(
+              width: 400,
+              height: 45,
+              margin: EdgeInsets.all(15),
+              decoration: BoxDecoration(color: Colors.grey.shade300,borderRadius: BorderRadius.circular(10)),
+              padding: EdgeInsets.all(10),
+              child: Row(children: [
+                Icon(Icons.search,color: Colors.black,),
+                Text("Search", style: TextStyle(fontSize: 20,),)
+              ],),
+            ),
+            onTap: (){
+              showSearch(context: context,
+                delegate: CustomSearchDelegate(),);
+              },
+          ),//SearchBar
           Padding(
             padding: const EdgeInsets.fromLTRB(20, 2, 20, 2),
             child: Row(children: [
