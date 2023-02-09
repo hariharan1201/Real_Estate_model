@@ -19,7 +19,7 @@ class _gridviewState extends State<gridview> {
         children: [
           GridView.count(crossAxisCount: 2,
             children: [
-              Container(margin: EdgeInsets.all(8),height: 100,width: 100,decoration: BoxDecoration(color: Colors.white,image: DecorationImage(image: AssetImage('Images/House1.jpg'),fit: BoxFit.fill), borderRadius: BorderRadius.all(Radius.circular(10))),
+              Container(margin: EdgeInsets.all(8),height: 100,width: 100,decoration: BoxDecoration(color: Colors.white,image: DecorationImage(image: AssetImage('Images/House6.jpg'),fit: BoxFit.fill), borderRadius: BorderRadius.all(Radius.circular(10))),
               child: Stack(
                 children: [
                   Container(
@@ -62,7 +62,7 @@ class _gridviewState extends State<gridview> {
                     )
                   ],
                 ),),
-              Container(margin: EdgeInsets.all(8),decoration: BoxDecoration(color: Colors.white,image: DecorationImage(image: AssetImage('Images/House1.jpg'),fit: BoxFit.fill), borderRadius: BorderRadius.all(Radius.circular(10))),
+              Container(margin: EdgeInsets.all(8),decoration: BoxDecoration(color: Colors.white,image: DecorationImage(image: AssetImage('Images/House7.jpg'),fit: BoxFit.fill), borderRadius: BorderRadius.all(Radius.circular(10))),
                 child: Stack(
                   children: [
                     Container(
@@ -83,7 +83,7 @@ class _gridviewState extends State<gridview> {
                   ],
                 ),
               ),
-              Container(margin: EdgeInsets.all(8),decoration: BoxDecoration(color: Colors.white,image: DecorationImage(image: AssetImage('Images/House1.jpg'),fit: BoxFit.fill), borderRadius: BorderRadius.all(Radius.circular(10))),
+              Container(margin: EdgeInsets.all(8),decoration: BoxDecoration(color: Colors.white,image: DecorationImage(image: AssetImage('Images/House8.jpg'),fit: BoxFit.fill), borderRadius: BorderRadius.all(Radius.circular(10))),
                 child: Stack(
                   children: [
                     Container(
@@ -103,7 +103,7 @@ class _gridviewState extends State<gridview> {
                     )
                   ],
                 ),),
-              Container(margin: EdgeInsets.all(8),decoration: BoxDecoration(color: Colors.white,image: DecorationImage(image: AssetImage('Images/House1.jpg'),fit: BoxFit.fill), borderRadius: BorderRadius.all(Radius.circular(10))),
+              Container(margin: EdgeInsets.all(8),decoration: BoxDecoration(color: Colors.white,image: DecorationImage(image: AssetImage('Images/House9.jpg'),fit: BoxFit.fill), borderRadius: BorderRadius.all(Radius.circular(10))),
                 child: Stack(
                   children: [
                     Container(
@@ -123,7 +123,27 @@ class _gridviewState extends State<gridview> {
                     )
                   ],
                 ),),
-              Container(margin: EdgeInsets.all(8),decoration: BoxDecoration(color: Colors.white,image: DecorationImage(image: AssetImage('Images/House1.jpg'),fit: BoxFit.fill), borderRadius: BorderRadius.all(Radius.circular(10))),
+              Container(margin: EdgeInsets.all(8),decoration: BoxDecoration(color: Colors.white,image: DecorationImage(image: AssetImage('Images/House10.jpg'),fit: BoxFit.fill), borderRadius: BorderRadius.all(Radius.circular(10))),
+                child: Stack(
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.all(Radius.circular(10))),
+                      margin: EdgeInsets.fromLTRB(0, 126, 0, 0),
+                      height: 40,
+                      child: Row(
+                        children: [
+                          SizedBox(width: 5,),
+                          Text("Mamalapuram\n2BHK-34 Lakhs",style: TextStyle(fontWeight: FontWeight.bold),),
+                          SizedBox(width: 45,),
+                          Icon(Icons.favorite_border,size: 20,),
+                          SizedBox(width: 1,),
+                          Text("4",style: TextStyle(fontSize: 13,),)
+                        ],
+                      ),
+                    )
+                  ],
+                ),),
+              Container(margin: EdgeInsets.all(8),decoration: BoxDecoration(color: Colors.white,image: DecorationImage(image: AssetImage('Images/House11.jpg'),fit: BoxFit.fill), borderRadius: BorderRadius.all(Radius.circular(10))),
                 child: Stack(
                   children: [
                     Container(
@@ -143,27 +163,7 @@ class _gridviewState extends State<gridview> {
                     )
                   ],
                 ),),
-              Container(margin: EdgeInsets.all(8),decoration: BoxDecoration(color: Colors.white,image: DecorationImage(image: AssetImage('Images/House1.jpg'),fit: BoxFit.fill), borderRadius: BorderRadius.all(Radius.circular(10))),
-                child: Stack(
-                  children: [
-                    Container(
-                      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.all(Radius.circular(10))),
-                      margin: EdgeInsets.fromLTRB(0, 126, 0, 0),
-                      height: 40,
-                      child: Row(
-                        children: [
-                          SizedBox(width: 5,),
-                          Text("Mamalapuram\n2BHK-34 Lakhs",style: TextStyle(fontWeight: FontWeight.bold),),
-                          SizedBox(width: 45,),
-                          Icon(Icons.favorite_border,size: 20,),
-                          SizedBox(width: 1,),
-                          Text("4",style: TextStyle(fontSize: 13),)
-                        ],
-                      ),
-                    )
-                  ],
-                ),),
-              Container(margin: EdgeInsets.all(8),decoration: BoxDecoration(color: Colors.white,image: DecorationImage(image: AssetImage('Images/House1.jpg'),fit: BoxFit.fill), borderRadius: BorderRadius.all(Radius.circular(10))),
+              Container(margin: EdgeInsets.all(8),decoration: BoxDecoration(color: Colors.white,image: DecorationImage(image: AssetImage('Images/House12.jpg'),fit: BoxFit.fill), borderRadius: BorderRadius.all(Radius.circular(10))),
                 child: Stack(
                   children: [
                     Container(

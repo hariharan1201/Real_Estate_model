@@ -49,9 +49,9 @@ class _homepageState extends State<homepage> {
           //Text line
           Container(
             margin: EdgeInsets.fromLTRB(20, 10, 20, 10),
-            height: 200,
+            height: 300,
             width: 400,
-            decoration: BoxDecoration(color: Colors.white70, borderRadius: BorderRadius.all(Radius.circular(10))),
+            decoration: BoxDecoration(color: Colors.transparent, borderRadius: BorderRadius.all(Radius.circular(10))),
             child: pageviewr(),
             ),//mid slider
           Padding(
@@ -63,7 +63,7 @@ class _homepageState extends State<homepage> {
               Icon(Icons.trending_up,size: 20,),
             ],),
           ),//Popular text
-          gridview()//GridView class
+          //GridView class
         ],),
     ),
       bottomNavigationBar: navigation(),
