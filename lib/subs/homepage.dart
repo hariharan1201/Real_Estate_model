@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:land_selling/subs/Gridview.dart';
 import 'package:land_selling/subs/Navigation.dart';
 import 'package:land_selling/subs/Pageview1.dart';
 import 'package:land_selling/subs/CustomSerachBar.dart';
