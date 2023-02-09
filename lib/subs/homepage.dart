@@ -3,6 +3,7 @@ import 'package:land_selling/subs/Gridview.dart';
 import 'package:land_selling/subs/Navigation.dart';
 import 'package:land_selling/subs/Pageview1.dart';
 import 'package:land_selling/subs/CustomSerachBar.dart';
+import 'package:land_selling/subs/Pageview2.dart';
 
 
 class homepage extends StatefulWidget {
@@ -19,6 +20,11 @@ class _homepageState extends State<homepage> {
     body: SafeArea(
       child: Column(
         children: [
+          Padding(
+            padding: const EdgeInsets.fromLTRB(15, 20, 190, 0),
+            child: Text("Find your Dream, Here",style:
+            TextStyle(fontSize: 30,fontFamily:'Poppins',letterSpacing: 2,),),
+          ),//HeadLine
           InkWell(
             child: Container(
               width: 400,
@@ -37,32 +43,34 @@ class _homepageState extends State<homepage> {
               },
           ),//SearchBar
           Padding(
-            padding: const EdgeInsets.fromLTRB(20, 2, 20, 2),
-            child: Row(children: [
-              Text("All", style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
-              SizedBox(width: 10,),
-              Text("Sell", style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
-              SizedBox(width: 10,),
-              Text("Buy", style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),)
-            ],),
-          ),//Upper text
-          //Text line
+            padding: const EdgeInsets.fromLTRB(0, 0,280,0),
+            child: Text("Categories",style: TextStyle(fontSize: 20,fontFamily: 'Poppins',fontWeight: FontWeight.bold),),
+          ),  //Categories
           Container(
-            margin: EdgeInsets.fromLTRB(20, 10, 20, 10),
-            height: 300,
+            margin: EdgeInsets.fromLTRB(15, 5, 15, 10),
+            height: 100,
             width: 400,
             decoration: BoxDecoration(color: Colors.transparent, borderRadius: BorderRadius.all(Radius.circular(10))),
             child: pageviewr(),
-            ),//mid slider
+          ),//Upper text//Text line/
           Padding(
             padding: const EdgeInsets.fromLTRB(20, 2, 20, 2),
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("Popular",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 22),),
-              Icon(Icons.trending_up,size: 20,),
+                Text("Mostly Liked",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,fontFamily: 'Poppins'),),
+                SizedBox(width: 3,),
+                Icon(Icons.favorite,size: 18,color: Colors.red,),
             ],),
           ),//Popular text
+          Expanded(
+            child: Container(
+              margin: EdgeInsets.symmetric(vertical:10,horizontal: 10),
+              height: 400,
+              width: 400,
+              decoration: BoxDecoration(color: Colors.transparent, borderRadius: BorderRadius.all(Radius.circular(10))),
+              child: pageviwer2(),
+            ),
+          ),//Mostly Liked
           //GridView class
         ],),
     ),
