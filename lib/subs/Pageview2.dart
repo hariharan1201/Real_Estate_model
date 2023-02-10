@@ -20,9 +20,9 @@ class _pageviwer2State extends State<pageviwer2> {
         containerlist(image:'Images/House2.jpg', price: '\$120k-\$145k', infrastructure: '3BHK,',
             name: 'Williamsburg', Location: 'Canada,NA', rating: '4.4', Contact: '+62 5673 8902'),
         containerlist(image: 'Images/House3.jpg', price: '\$200k', infrastructure: 'Beach View,Pool,4BHK',
-            name: 'Grant\'s beach villa', Location: 'Maiami,US', rating: '4.4', Contact: '+63 6578 8990'),
+            name: 'Grant\'s beach villa', Location: 'Miami,US', rating: '4.4', Contact: '+63 6578 8990'),
         containerlist(image: 'Images/House3.jpg', price: '\$200k', infrastructure: 'Beach View,Pool,4BHK',
-            name: 'Grant\'s beach villa', Location: 'Maiami,US', rating: '4.4', Contact: '+63 6578 8990')
+            name: 'Grant\'s beach villa', Location: 'Miami,US', rating: '4.4', Contact: '+63 6578 8990')
       ],
     );;
   }
