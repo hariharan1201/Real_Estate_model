@@ -41,7 +41,7 @@ class _homepageState extends State<homepage> {
                 delegate: CustomSearchDelegate(),);
               },
           ),//SearchBar
-          Padding(
+          Padding (
             padding: const EdgeInsets.fromLTRB(0, 0,280,0),
             child: Text("Categories",style: TextStyle(fontSize: 20,fontFamily: 'Poppins',fontWeight: FontWeight.bold),),
           ),  //Categories
@@ -56,11 +56,11 @@ class _homepageState extends State<homepage> {
             padding: const EdgeInsets.fromLTRB(20, 2, 20, 2),
             child: Row(
               children: [
-                Text("Mostly Liked",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,fontFamily: 'Poppins'),),
+                Text("Top Rated",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,fontFamily: 'Poppins'),),
                 SizedBox(width: 3,),
-                Icon(Icons.favorite,size: 18,color: Colors.red,),
+                Icon(Icons.star,size: 18,color: Colors.yellow[700],),
             ],),
-          ),//Popular text
+          ),//Top Rated
           Expanded(
             child: Container(
               margin: EdgeInsets.symmetric(vertical:10,horizontal: 10),
@@ -69,7 +69,7 @@ class _homepageState extends State<homepage> {
               decoration: BoxDecoration(color: Colors.transparent, borderRadius: BorderRadius.all(Radius.circular(10))),
               child: pageviwer2(),
             ),
-          ),//Mostly Liked
+          ),
           //GridView class
         ],),
     ),
