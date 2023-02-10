@@ -15,7 +15,7 @@ class _pageviwer2State extends State<pageviwer2> {
     return ListView(
       scrollDirection: Axis.vertical,
       children: [
-        containerlist(image: 'Images/House1.jpg', head_line: '\$95k-120k',contents: ''),//1
+        containerlist(image: 'Images/House1.jpg', head_line: '\$95k-120k',contents: 'The Harvard House '),//1
 
       ],
     );;
