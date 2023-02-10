@@ -34,7 +34,7 @@ class containerlist extends StatelessWidget {
               height: 110,
               width: 110,
               decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
-                  image: DecorationImage(image: AssetImage(image),fit: BoxFit.fill)),), //Imgae-Holders
+                  image: DecorationImage(image: AssetImage(image),fit: BoxFit.cover)),), //Imgae-Holders
             Container(
               margin: EdgeInsets.only(left: 10),
               height: 110,
@@ -44,9 +44,9 @@ class containerlist extends StatelessWidget {
 
                 children: [
                   Padding(
-                      padding: const EdgeInsets.only(left: 10),
+                      padding: const EdgeInsets.only(left: 10,top: 5),
                       child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween ,children:[
-                        Text(price,style: TextStyle(fontWeight: FontWeight.bold,fontFamily: 'Eox2',fontSize: 15),),
+                        Text(price,style: TextStyle(fontWeight: FontWeight.bold,fontFamily: 'Eox2',fontSize: 20),),
                         Padding(
                           padding: const EdgeInsets.only(right: 15),
                           child: Row(
@@ -66,12 +66,12 @@ class containerlist extends StatelessWidget {
                       ]),
                     ),
                   ],),
-                  SizedBox(height: 25,),//Infrastructure
+                  SizedBox(height: 18,),//Infrastructure
                   Row(children: [
                     Padding(
                       padding: const EdgeInsets.only(left: 10),
                       child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween ,children:[
-                        Text(name,style: TextStyle(fontFamily: 'Poppins',fontSize: 15,fontWeight: FontWeight.bold),),
+                        Text(name,style: TextStyle(fontFamily: 'Poppins',fontSize: 18,fontWeight: FontWeight.bold),),
                       ]),
                     ),
                   ],),//Recidency_Name
@@ -79,7 +79,7 @@ class containerlist extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(left: 10),
                       child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween ,children:[
-                        Text(Location,style: TextStyle(fontFamily: 'Poppins',fontSize: 12),),
+                        Text(Location,style: TextStyle(fontFamily: 'Poppins',fontSize: 10),),
                       ]),
                     ),
                   ],),//Location
@@ -87,7 +87,7 @@ class containerlist extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(left: 10),
                       child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween ,children:[
-                        Text(Contact,style: TextStyle(fontFamily: 'Poppins',fontSize: 13,fontWeight: FontWeight.bold),),
+                        Text(Contact,style: TextStyle(fontFamily: 'Poppins',fontSize: 12,fontWeight: FontWeight.bold),),
                       ]),
                     ),
                   ],)//Contact
