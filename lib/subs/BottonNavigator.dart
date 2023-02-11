@@ -12,7 +12,7 @@ class _navigationState extends State<navigation> {
   @override
   Widget build(BuildContext context) {
     return const GNav(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.lightBlueAccent,
         gap: 10,
         tabs: const [
         GButton(icon: Icons.home,text: 'Home',),

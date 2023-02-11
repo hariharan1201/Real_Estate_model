@@ -26,7 +26,7 @@ class containerlist extends StatelessWidget {
         margin: EdgeInsets.all(5),
         height: 125,
         width: 200,
-        decoration: BoxDecoration(color: Colors.grey.shade300,borderRadius: BorderRadius.circular(15),),
+        decoration: BoxDecoration(color: Colors.blue.shade50,borderRadius: BorderRadius.circular(15),),
         child: Row(
           children: [
             Container(

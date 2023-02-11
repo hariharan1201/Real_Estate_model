@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:land_selling/subs/Glasseffort.dart';
+import 'package:land_selling/subs/Smokey_text.dart';
 
 
 class pageviewr extends StatefulWidget {
@@ -24,7 +24,7 @@ class _pageviewrState extends State<pageviewr> {
           decoration: BoxDecoration(image: DecorationImage(image: AssetImage('Images/House5.jpg'),fit: BoxFit.fill),borderRadius: BorderRadius.circular(15),),
           child: Container(
             color: Colors.transparent,
-            child: glasseffect(child: '\t\tHouses\n        &\nApartment'),
+            child: smokey_text(text: '\t\tHouses\n        &\nApartment',),
           ),
         ),
         Container(
@@ -34,7 +34,7 @@ class _pageviewrState extends State<pageviewr> {
           decoration: BoxDecoration(image: DecorationImage(image: AssetImage('Images/Land_Property.jpg'), fit: BoxFit.fill),borderRadius: BorderRadius.circular(15),),
           child: Container(
             color: Colors.transparent,
-            child: glasseffect(child: 'Land Properties'),
+            child: smokey_text(text: 'Land Properties',),
           ),
         ),
         Container(
@@ -46,7 +46,7 @@ class _pageviewrState extends State<pageviewr> {
             BoxFit.fitWidth,alignment: Alignment.topCenter),),
           child: Container(
             color: Colors.transparent,
-            child: glasseffect(child: 'Commercial\n Properties',),
+            child: smokey_text(text: 'Commercial\nProperties',),
           ),
         ),
         Container(
@@ -58,7 +58,7 @@ class _pageviewrState extends State<pageviewr> {
             BoxFit.fitWidth,alignment: Alignment.topCenter),),
           child: Container(
           color: Colors.transparent,
-          child: glasseffect(child: 'Multi-family\nProperties'),
+          child: smokey_text(text: 'Multi-Family\nProperties',),
           ),
     ),
         Container(
@@ -70,7 +70,7 @@ class _pageviewrState extends State<pageviewr> {
             BoxFit.fitWidth,alignment: Alignment.topCenter),),
           child: Container(
             color: Colors.transparent,
-            child: glasseffect(child: 'Vaccation House'),
+            child: smokey_text(text: 'Vacation House',),
           ),
         ),
       ],);

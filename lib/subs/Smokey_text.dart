@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'dart:ui';
-class glasseffect extends StatelessWidget {
-  final child;
-  const glasseffect({required this.child}) ;
+
+import 'package:land_selling/subs/Smokey_Icon.dart';
+class smokey_text extends StatelessWidget {
+  final text;
+  const smokey_text({this.text}) ;
 
   @override
   Widget build(BuildContext context) {
@@ -13,14 +15,10 @@ class glasseffect extends StatelessWidget {
           Container(
             decoration: BoxDecoration(gradient: LinearGradient(begin:Alignment.topLeft,end:Alignment.topRight,colors:
             [Colors.grey.withOpacity(0.5),Colors.grey.withOpacity(0.5)]),
-                borderRadius: BorderRadius.circular(15)),
-            child: Center(child: Text(child,style:
-            TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color: Colors.white),
-            ),
-            ),
-          ),
-        ],
-      ),
+                borderRadius: BorderRadius.circular(15)),),
+          Center(child: Text(text,style:
+          TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color: Colors.white),),)
+        ]),
     );
   }
 }

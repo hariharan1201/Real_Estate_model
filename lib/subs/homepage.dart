@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:land_selling/subs/Navigation.dart';
-import 'package:land_selling/subs/Pageview1.dart';
+import 'package:land_selling/subs/BottonNavigator.dart';
+import 'package:land_selling/subs/Categories.dart';
 import 'package:land_selling/subs/CustomSerachBar.dart';
-import 'package:land_selling/subs/Pageview2.dart';
+import 'package:land_selling/subs/TopRated.dart';
 
 
 class homepage extends StatefulWidget {
@@ -15,7 +15,7 @@ class homepage extends StatefulWidget {
 class _homepageState extends State<homepage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(backgroundColor: Colors.white,
+    return Scaffold(backgroundColor: Colors.blue.shade100,
     body: SafeArea(
       child: Column(
         children: [

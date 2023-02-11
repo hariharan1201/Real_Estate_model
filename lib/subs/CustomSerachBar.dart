@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 
 class CustomSearchDelegate extends SearchDelegate {
   List<String> searchTerms = [
-    'Chennai',
-    'Chengalpet',
-    'Thambaram',
-    'Cholaimedu'
+    'California',
+    'Chicago',
+    'Los Altos',
+    'Los Santos',
+    'Miami',
   ];
 
   @override
