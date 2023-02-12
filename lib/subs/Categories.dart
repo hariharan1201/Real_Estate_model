@@ -21,7 +21,7 @@ class _pageviewrState extends State<pageviewr> {
           margin: EdgeInsets.all(5),
           height: 10,
           width: 200,
-          decoration: BoxDecoration(image: DecorationImage(image: AssetImage('Images/House5.jpg'),fit: BoxFit.fill),borderRadius: BorderRadius.circular(15),),
+          decoration: BoxDecoration(image: DecorationImage(image: AssetImage('Images/House10.jpg'),fit: BoxFit.fill),borderRadius: BorderRadius.circular(15),),
           child: Container(
             color: Colors.transparent,
             child: smokey_text(text: '\t\tHouses\n        &\nApartment',),

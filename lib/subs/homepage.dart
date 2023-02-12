@@ -24,16 +24,23 @@ class _homepageState extends State<homepage> {
             child: Text("Find your Dream, Here",style:
             TextStyle(fontSize: 30,fontFamily:'Poppins',letterSpacing: 2,),),
           ),//HeadLine
-          Container(
-            width: 400,
-            height: 45,
-            margin: EdgeInsets.all(15),
-            decoration: BoxDecoration(color: Colors.white,borderRadius: BorderRadius.circular(10)),
-            padding: EdgeInsets.all(10),
-            child: Row(children: [
-              Icon(Icons.search,color: Colors.black,),
-              Text("Search", style: TextStyle(fontSize: 20,),)
-            ],),
+          InkWell(
+            onTap: (){
+
+                showSearch(context: context,
+                  delegate: CustomSearchDelegate(),);
+                },
+            child: Container(
+              width: 400,
+              height: 45,
+              margin: EdgeInsets.all(15),
+              decoration: BoxDecoration(color: Colors.white,borderRadius: BorderRadius.circular(10)),
+              padding: EdgeInsets.all(10),
+              child: Row(children: [
+                Icon(Icons.search,color: Colors.black,),
+                Text("Search", style: TextStyle(fontSize: 20,),)
+              ],),
+            ),
           ),//SearchBar
           Padding (
             padding: const EdgeInsets.fromLTRB(15, 0,20,0),

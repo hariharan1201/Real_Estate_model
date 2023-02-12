@@ -28,11 +28,11 @@ class _Property_detialsState extends State<Property_detials> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: Colors.blue.shade50,
       body: SafeArea(
         child: Container(
           decoration: BoxDecoration(image: DecorationImage(image:
-          AssetImage(widget.PropertyImage),alignment: Alignment.topCenter)),//Image of house
+          AssetImage(widget.PropertyImage),alignment: Alignment.topCenter,fit: BoxFit.fitWidth)),//Image of house
           child: Column(
             children: [
               Padding(
@@ -58,7 +58,7 @@ class _Property_detialsState extends State<Property_detials> {
                         padding: const EdgeInsets.only(left: 10,right: 10),
                         child: Column(
                           children: [
-                            Icon(Icons.linear_scale_outlined),
+                            Icon(Icons.horizontal_rule,),
                             Container(
                               height: 95,
                               width: 400,
