@@ -24,26 +24,25 @@ class _homepageState extends State<homepage> {
             child: Text("Find your Dream, Here",style:
             TextStyle(fontSize: 30,fontFamily:'Poppins',letterSpacing: 2,),),
           ),//HeadLine
-          InkWell(
-            child: Container(
-              width: 400,
-              height: 45,
-              margin: EdgeInsets.all(15),
-              decoration: BoxDecoration(color: Colors.grey.shade300,borderRadius: BorderRadius.circular(10)),
-              padding: EdgeInsets.all(10),
-              child: Row(children: [
-                Icon(Icons.search,color: Colors.black,),
-                Text("Search", style: TextStyle(fontSize: 20,),)
-              ],),
-            ),
-            onTap: (){
-              showSearch(context: context,
-                delegate: CustomSearchDelegate(),);
-              },
+          Container(
+            width: 400,
+            height: 45,
+            margin: EdgeInsets.all(15),
+            decoration: BoxDecoration(color: Colors.white,borderRadius: BorderRadius.circular(10)),
+            padding: EdgeInsets.all(10),
+            child: Row(children: [
+              Icon(Icons.search,color: Colors.black,),
+              Text("Search", style: TextStyle(fontSize: 20,),)
+            ],),
           ),//SearchBar
           Padding (
-            padding: const EdgeInsets.fromLTRB(0, 0,280,0),
-            child: Text("Categories",style: TextStyle(fontSize: 20,fontFamily: 'Poppins',fontWeight: FontWeight.bold),),
+            padding: const EdgeInsets.fromLTRB(15, 0,20,0),
+            child: Row(
+              children: [
+                Text("Categories",style: TextStyle(fontSize: 20,fontFamily: 'Poppins',fontWeight: FontWeight.bold),),
+                Icon(Icons.arrow_forward,size: 20,)
+              ],
+            )
           ),  //Categories
           Container(
             margin: EdgeInsets.fromLTRB(15, 5, 15, 10),
@@ -53,7 +52,7 @@ class _homepageState extends State<homepage> {
             child: pageviewr(),
           ),//Upper text//Text line/
           Padding(
-            padding: const EdgeInsets.fromLTRB(20, 2, 20, 2),
+            padding: const EdgeInsets.fromLTRB(15, 2, 20, 2),
             child: Row(
               children: [
                 Text("Top Rated",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,fontFamily: 'Poppins'),),
@@ -63,7 +62,7 @@ class _homepageState extends State<homepage> {
           ),//Top Rated
           Expanded(
             child: Container(
-              margin: EdgeInsets.symmetric(vertical:10,horizontal: 10),
+              margin: EdgeInsets.symmetric(vertical:3,horizontal: 8),
               height: 400,
               width: 400,
               decoration: BoxDecoration(color: Colors.transparent, borderRadius: BorderRadius.all(Radius.circular(10))),

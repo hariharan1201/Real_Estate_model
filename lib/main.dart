@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:land_selling/subs/NextPages.dart';
+import 'package:land_selling/subs/PropertyDetials.dart';
 import 'package:land_selling/subs/homepage.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
